@@ -8,11 +8,7 @@ Mängu eesmärk on võimalikult kiiresti ekraanile tekkivaid sõnu ära trükkid
 
 1. Töö tuleb teha vähemalt kahekesi, eelnevalt kokkuleppel on lubatud ka kolm liiget. GitHub'is peab eristuma, kes mida tegi!
 1. README.md fail sisaldab:
-<<<<<<< HEAD
-    * autorite nimesid; 
-=======
     * autorite nimesid; Daisy Pukkonen | Kurmo Rootsi
->>>>>>> f91e8fcb57a6f80471ae8810028ff95cfc3bfafb
     * repositooriumisse lisatud pilti/skeemi rakenduse tööprotsessidest (sh skoori moodustamine); 
     * skoori moodustamise ja lisatud funktsionaalsuste tekstipõhist kirjeldust.
 1. Mängu on lisatud täiendavad funktsionaalsused:  
