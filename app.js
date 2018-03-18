@@ -18,10 +18,12 @@ const TYPER = function () {
   this.init()
 }
 
+
 window.TYPER = TYPER
 
 TYPER.prototype = {
   init: function () {
+      
     this.canvas = document.getElementsByTagName('canvas')[0]
     this.ctx = this.canvas.getContext('2d')
 
@@ -30,7 +32,7 @@ TYPER.prototype = {
 
     this.canvas.width = this.WIDTH * 2
     this.canvas.height = this.HEIGHT * 2
-
+      
     this.loadWords()
   },
 
