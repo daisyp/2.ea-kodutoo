@@ -32,7 +32,7 @@ TYPER.prototype = {
 
     this.canvas.width = this.WIDTH * 2
     this.canvas.height = this.HEIGHT * 2
-      
+    
     this.loadWords()
   },
 
@@ -126,4 +126,5 @@ window.onload = function () {
   const typer = new TYPER()
   window.typer = typer
 }
+
 document.getElementById('sona').innerHTML = this.guessedWords;

@@ -10,6 +10,10 @@ html, body, canvas {
     width: 100%;
     height: 100%;
 }
+
+body {
+    background: #ffdd99;
+}
       
 canvas {
     position: absolute;
