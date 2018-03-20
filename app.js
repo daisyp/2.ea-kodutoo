@@ -13,7 +13,9 @@ const TYPER = function () {
   this.words = []
   this.word = null
   this.wordMinLength = 5
-  this.guessedWords = 0
+  this.gameScore = 0
+  this.gameMultiplier = 1
+  this.missType = 0
 
   this.init()
 }
@@ -62,7 +64,7 @@ TYPER.prototype = {
   },
 
   generateWord: function () {
-    const generatedWordLength = this.wordMinLength + parseInt(this.guessedWords / 5)
+    const generatedWordLength = this.wordMinLength + parseInt(this.gameScore / 5)
     const randomIndex = (Math.random() * (this.words[generatedWordLength].length - 1)).toFixed()
     const wordFromArray = this.words[generatedWordLength][randomIndex]
 
@@ -76,12 +78,18 @@ TYPER.prototype = {
       this.word.removeFirstLetter()
 
       if (this.word.left.length === 0) {
-        this.guessedWords += 1
-
+        this.gameScore = 1 * this.gameMultiplier
+        this.gameMultiplier += 0.2
         this.generateWord()
       }
 
       this.word.Draw()
+    } else {
+        this.missType += 1
+    }
+    if (this.missType >= 5){
+        this.gameMultiplier = 1;
+        this.missType = 0;
     }
   }
 }
@@ -127,4 +135,4 @@ window.onload = function () {
   window.typer = typer
 }
 
-document.getElementById('sona').innerHTML = this.guessedWords;
+document.getElementById('sona').innerHTML = this.gameScore;
