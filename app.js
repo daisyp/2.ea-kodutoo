@@ -28,7 +28,7 @@ TYPER.prototype = {
       
     this.canvas = document.getElementsByTagName('canvas')[0]
     this.ctx = this.canvas.getContext('2d')
-    this.playerName = document.getElementById('playerName')
+    this.playerName = document.getElementById('playerName').value
 
     this.canvas.style.width = this.WIDTH + 'px'
     this.canvas.style.height = this.HEIGHT + 'px'
