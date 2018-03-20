@@ -7,12 +7,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="app.js"></script>
   </head>
-  <body>
+  <body id="body" class="light-mode">
     <div id="startScreen">
         <h1>Typer</h1>
         <h2>How fast can you type?</h2>
         <input type="text" id="playerName" />
         <input id="StartButton" type="button" value="Start"/>
+        <button type="button" name="dark_light" onclick="switchDarkLight()" title="Switch dark/light mode">Switch</button>
         <img class = "display" src="infobtn.png" id="info" width="48px" height="48px" onclick="openInfo()"/>
         <div id="popup_bg">
             <div id="popup_main_div">
@@ -44,6 +45,10 @@
         $("#startScreen").hide();
         $("#gameCanvas").show();
     });
+    function switchDarkLight() {
+    var $body = $("body");
+    $body.toggleClass("light-mode dark-mode")
+    }
     </script>
     
   </body>

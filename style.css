@@ -11,10 +11,14 @@ html, body, canvas {
     height: 100%;
 }
 
-body {
-    background: #ffdd99;
+body.light-mode{
+	background-color: #ffdd99;
 }
-      
+
+body.dark-mode{
+	background-color: #802b00;
+}
+  
 canvas {
     position: absolute;
 }
