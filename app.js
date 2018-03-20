@@ -28,6 +28,7 @@ TYPER.prototype = {
       
     this.canvas = document.getElementsByTagName('canvas')[0]
     this.ctx = this.canvas.getContext('2d')
+    this.playerName = document.getElementById('userInput')
 
     this.canvas.style.width = this.WIDTH + 'px'
     this.canvas.style.height = this.HEIGHT + 'px'
@@ -82,7 +83,7 @@ TYPER.prototype = {
         this.gameMultiplier += 0.2
         this.generateWord()
       }
-
+      print(this.playerName)
       this.word.Draw()
     } else {
         this.missType += 1
