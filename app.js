@@ -83,7 +83,7 @@ TYPER.prototype = {
         this.gameMultiplier += 0.2
         this.generateWord()
       }
-      print(this.playerName)
+      console.log(this.playerName)
       this.word.Draw()
     } else {
         this.missType += 1
