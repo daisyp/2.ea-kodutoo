@@ -136,5 +136,15 @@ window.onload = function () {
   const typer = new TYPER()
   window.typer = typer
 }
+function checkNameInput() {
+    let x = document.getElementById("playerName").value;
+    if (document.getElementById("playerName").value != ""){
+        console.log(document.getElementById("playerName").value)
+        $("#startScreen").hide();
+        $("#gameCanvas").show();
+    } else {
+        alert("Name field is empty!")
+    }
+}
 
 document.getElementById('sona').innerHTML = this.gameScore;
