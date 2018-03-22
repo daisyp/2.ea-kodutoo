@@ -14,7 +14,16 @@
         <input type="text" id="playerName" />
         <input id="StartButton" type="button" value="Start"/>
         <button type="button" name="dark_light" onclick="switchDarkLight()" title="Switch dark/light mode">Switch</button>
+        <button type="button" onclick="openHighscores()" title="Highscores">Highscores</button>
         <img class = "display" src="infobtn.png" id="info" width="48px" height="48px" onclick="openInfo()"/>
+        <div id="popup_bg">
+            <div id="popup_main_div">
+                <h2>Highscores</h2>
+                <div id="close_popup_div" title="Close" onclick="closePopup()">
+                    <p>X</p>
+                </div>
+            </div>
+        </div>
         <div id="popup_bg">
             <div id="popup_main_div">
                 <h2>Mängu eesmärk on võimalikult kiiresti ekraanile tekkivaid sõnu ära trükkida.</h2>
@@ -36,6 +45,9 @@
 
         function closePopup() {
             popupDiv.style.display = "none";
+        }
+        function openHighscores() {
+            popupDiv.style.display = "block";
         }
     </script>
     <canvas id="gameCanvas" style="display: none;"></canvas>

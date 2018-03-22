@@ -111,6 +111,13 @@ Word.prototype = {
     this.ctx.textAlign = 'center'
     this.ctx.font = '140px Courier'
     this.ctx.fillText(this.left, this.canvas.width / 2, this.canvas.height / 2)
+    /* var gameover = false;
+    (see kus score siis if statementiga gameover = true)
+    if(gameover) {
+        this.ctx.clearRect(0,0,this.canvas.width, this.canvas.height);
+        text("GAME OVER", "75px Amatic SC", 300, 400, "black");
+    } */
+      
   },
 
   removeFirstLetter: function () {
