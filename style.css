@@ -40,8 +40,39 @@ div {
     text-align: center; 
 }
 
-input[type=button] {
-    
+
+button, #StartButton {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  width: 180px;
+  display: flex; 
+  justify-content: center;
+  background: #d69761;
+  background-image: -webkit-linear-gradient(top, #d69761, #750b0b);
+  background-image: -moz-linear-gradient(top, #d69761, #750b0b);
+  background-image: -ms-linear-gradient(top, #d69761, #750b0b);
+  background-image: -o-linear-gradient(top, #d69761, #750b0b);
+  background-image: linear-gradient(to bottom, #d69761, #750b0b);
+  -webkit-border-radius: 51;
+  -moz-border-radius: 51;
+  border-radius: 51px;
+  text-shadow: 5px 1px 3px #666666;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 5px 11px 5px 11px;
+  text-decoration: none;
+}
+
+button:hover, #StartButton:hover {
+  background: #750b0b;
+  background-image: -webkit-linear-gradient(top, #750b0b, #d69761);
+  background-image: -moz-linear-gradient(top, #750b0b, #d69761);
+  background-image: -ms-linear-gradient(top, #750b0b, #d69761);
+  background-image: -o-linear-gradient(top, #750b0b, #d69761);
+  background-image: linear-gradient(to bottom, #750b0b, #d69761);
+  text-decoration: none;
 }
 
 img.display {
@@ -50,7 +81,7 @@ img.display {
     bottom: 0px;
 }
 
-#popup_bg {
+#popup_bg, #popup_hs {
     position: fixed;
     top: 0;
     left: 0;
@@ -60,7 +91,7 @@ img.display {
     display: none;
 }
 
-#popup_main_div {
+#popup_main_div, #popup_highscore_div{
     position: fixed;
     width: 800px;
     height: 500px;

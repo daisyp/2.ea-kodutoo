@@ -16,10 +16,10 @@
         <button type="button" name="dark_light" onclick="switchDarkLight()" title="Switch dark/light mode">Switch</button>
         <button type="button" onclick="openHighscores()" title="Highscores">Highscores</button>
         <img class = "display" src="infobtn.png" id="info" width="48px" height="48px" onclick="openInfo()"/>
-        <div id="popup_bg">
-            <div id="popup_main_div">
+        <div id="popup_hs">
+            <div id="popup_highscore_div">
                     <h2>Highscores</h2>
-                    <div id="close_popup_div" title="Close" onclick="closePopup()">
+                    <div id="close_popup_div" title="Close" onclick="closeHighscore()">
                         <p>X</p>
                     </div>
                     <div id="highscores">
@@ -40,6 +40,7 @@
     <script>
         /*POPUP*/
         var popupDiv = document.getElementById("popup_bg");
+        var popupDiv2 = document.getElementById("popup_hs");
 
         function openInfo() {
             popupDiv.style.display = "block";
@@ -48,8 +49,11 @@
         function closePopup() {
             popupDiv.style.display = "none";
         }
+        function closeHighscore() {
+            popupDiv2.style.display = "none";
+        }
         function openHighscores() {
-            popupDiv.style.display = "block";
+            popupDiv2.style.display = "block";
             document.getElementById('highscores').innerHTML = localStorage.getItem("scores");
         }
     </script>
