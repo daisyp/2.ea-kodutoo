@@ -21,3 +21,7 @@ Mängu eesmärk on võimalikult kiiresti ekraanile tekkivaid sõnu ära trükkid
 ![alt text](https://www.upload.ee/image/8239577/29547174_1657611087626351_1705142854_n.jpg)
 
 ## Skoori moodustamise kirjeldus
+
+Skoor moodustub õigesti vastatud sõnade arvust ning sajalasest punktikaotuse funktsioonist.
+Alustatakse 50 eluga, ning iga valesti läinud tähemärgiga (mis on sõna esimene tähemärk) kaotatakse 1 elu.
+Skoor moodustub 0 punkti alustusega ning punkte teenitakse score=1*game_multiplier, ning õige tähega liidetakse game_multiplier'ile +=3.6
