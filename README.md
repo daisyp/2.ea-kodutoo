@@ -18,6 +18,6 @@ Mängu eesmärk on võimalikult kiiresti ekraanile tekkivaid sõnu ära trükkid
 ## Skeem rakenduse tööprotsessidest
 
 ![alt text](https://www.upload.ee/image/8230956/start.JPG)
-![alt text]()
+![alt text](https://www.upload.ee/image/8239577/29547174_1657611087626351_1705142854_n.jpg)
 
 ## Skoori moodustamise kirjeldus
