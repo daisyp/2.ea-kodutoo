@@ -38,7 +38,13 @@
             </div>
         </div>
     </div>
+    <div id="scoreboard">
+    </div>
+    <div id="lifeboard">
+    </div>
     <script>
+        this.gameStart = false
+        console.log(this.gameStart)
         /*POPUP*/
         var popupDiv = document.getElementById("popup_bg");
         var popupDiv2 = document.getElementById("popup_hs");
@@ -62,7 +68,7 @@
     
     <script>
     $("#StartButton").click(function () {
-        checkNameInput();
+        checkNameInput(this.gameStart);
     });
     function switchDarkLight() {
     var $body = $("body");
