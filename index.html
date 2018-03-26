@@ -18,10 +18,12 @@
         <img class = "display" src="infobtn.png" id="info" width="48px" height="48px" onclick="openInfo()"/>
         <div id="popup_bg">
             <div id="popup_main_div">
-                <h2>Highscores</h2>
-                <div id="close_popup_div" title="Close" onclick="closePopup()">
-                    <p>X</p>
-                </div>
+                    <h2>Highscores</h2>
+                    <div id="close_popup_div" title="Close" onclick="closePopup()">
+                        <p>X</p>
+                    </div>
+                    <div id="highscores">
+                    </div>
             </div>
         </div>
         <div id="popup_bg">
@@ -48,6 +50,7 @@
         }
         function openHighscores() {
             popupDiv.style.display = "block";
+            document.getElementById('highscores').innerHTML = localStorage.getItem("scores");
         }
     </script>
     <canvas id="gameCanvas" style="display: none;"></canvas>
