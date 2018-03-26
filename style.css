@@ -35,6 +35,12 @@ h2 {
     font-family: Amatic SC;
     font-size: 60px;
 }
+#p_name {
+    text-align: center;
+    font-family: Amatic SC;
+    font-size: 20px;
+}
+
 
 div {
     text-align: center; 
@@ -58,10 +64,10 @@ button, #StartButton {
   -moz-border-radius: 51;
   border-radius: 51px;
   text-shadow: 5px 1px 3px #666666;
-  font-family: Courier New;
+  font-family: Amatic SC;
   color: #ffffff;
-  font-size: 20px;
-  padding: 5px 11px 5px 11px;
+  font-size: 30px;
+  padding: 5px 5px 5px 5px;
   text-decoration: none;
 }
 
